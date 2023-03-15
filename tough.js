@@ -4,12 +4,20 @@ let students = [
   { name: "mehdi", id: 3 },
   { name: "zahra", id: 4 },
 ];
-function allUsers(a) {
-  return a;
+function allUsers() {
+  students.forEach(element  => {
+   console.log(element);
+});
 }
-let show = allUsers(students);
-console.log(show);
+allUsers()
+// or
+function allUsers() {
+for (const i of students) {
 
+   console.log(i);
+}
+}
+allUsers()
 
 // end of getting all users
 
